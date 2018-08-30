@@ -37,8 +37,9 @@ public class Job {
 
     }
 
+
     private void execute() throws Exception {
-        LOGGER.info("Downloading content from https://www.packtpub.com/packt/offers/free-learning?from=block and sending it to you");
+        LOGGER.info("Downloading content from url {} " ,URL_TO_PACKT_PUB);
 
 
         String content = downloader.execute(URL_TO_PACKT_PUB);
