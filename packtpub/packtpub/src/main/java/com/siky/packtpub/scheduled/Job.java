@@ -30,7 +30,7 @@ public class Job {
     @Qualifier(value = "emailComponent")
     private Command<EmailDTO, Void> emailSender;
 
-    @Scheduled(cron = "01 00 10 * * *")
+    @Scheduled(cron = "01 00 06 * * *")
     public void run() throws Exception {
 
         execute();
