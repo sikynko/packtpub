@@ -1,6 +1,6 @@
 package com.siky.packtpub.parser;
 
-public interface Command<T, E> {
+public interface Command<T, S> {
 
-    E execute(T t) throws Exception;
+    S execute(T t) throws Exception;
 }
